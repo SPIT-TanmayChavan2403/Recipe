@@ -1,0 +1,17 @@
+<div id="add-recipe-container">
+    <div id="wrapper">
+        <div id="container">
+            <div id="heading">
+                <h2>Enter your recipe details 😋</h2>
+            </div>
+            <div id="input-section">
+                <input type="text" #name placeholder="Enter the name of recipe" class="input-field">
+                <input type="text" #desc placeholder="Enter description..." class="input-field desc">
+                <input type="text" #imgSrc placeholder="Paste image url" class="input-field">
+            </div>
+            <div id="submit-button">
+                <button (click)="addItems(name.value, desc.value, imgSrc.value)" > Add my recipe </button>
+            </div>
+        </div>
+    </div>
+</div>

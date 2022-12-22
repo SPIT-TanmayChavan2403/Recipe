@@ -1,0 +1,84 @@
+#add-recipe-container{
+    width: 100%;
+    height: 90%;
+    background-color: #ff9f0d;
+    background-size: 100%, 100%;
+    background-position: center;
+    background-image: url("../../../assets/bg.jpg");
+}
+
+#wrapper{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff9f0d;
+}
+
+#container{
+    width: 40%;
+    height: 70%;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#heading{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    padding: 0px 20px;
+    align-items: center;
+    color: rgb(29, 29, 29);
+    /* border: 1px solid black; */
+}
+
+#input-section{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+
+.input-field{
+    width: 70%;
+    height: 15%;
+    border: none;
+    padding: 0px 10px;
+    background: #eeeeee;
+    outline-color: #ff9f0d;
+}
+
+.desc{
+    height: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+#submit-button{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#submit-button button{
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #ff9f0d;
+}
