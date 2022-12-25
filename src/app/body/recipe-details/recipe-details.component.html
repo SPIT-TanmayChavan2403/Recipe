@@ -1,0 +1,21 @@
+<div id="details">
+
+    <div id="banner-image">
+        <img src={{imageLink}}>
+        <div id="linearGradient"></div>
+        <h1 id="title" > {{foodName}} </h1>
+    </div>
+
+    <div id="recipe-detail">
+        <div id="description">
+            <p> {{desc}} </p>
+        </div>
+        <div class="ingredients">
+            <h1>Ingredients</h1>
+            <ul>
+                <li class="tag" *ngFor="let ingr of ingredients" ><h3>{{ingr}}</h3></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
