@@ -1,6 +1,8 @@
 #logo{
-    color: white;
+    cursor: pointer;
+    color: #ff9f0d;
     font-weight: 900;
+    font-size: 1.7rem;
     width: fit-content;
     font-family: 'Rubik Vinyl', cursive !important;
 }
@@ -10,7 +12,7 @@
 }
 
 #navbarButtons{
-    width: 40%;
+    width: 30%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -18,10 +20,11 @@
 }
 
 #recipes, #shopping-list{
-    width: 30%;
-    height: 65%;
+    width: 45%;
+    height: 55%;
     border: none;
     cursor: pointer;
     font-size: 1.2rem;
+    border-radius: 50px;
     background-color: white;
 }

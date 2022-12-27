@@ -1,0 +1,42 @@
+<div id="shopping-list-container">
+    <div id="shopping-list-innerWrapper">
+        <div id="list-container">
+            <div class="list" *ngFor="let data of service.data">
+                <div class="foodImage">
+                    <img src={{data.imageSrc}} />
+                </div>
+                <div class="foodName">
+                    <h3>{{ data.name }}</h3>
+                    <button (click)="addToCart(data.name, data.imageSrc)" > + Add to card </button>
+                </div>
+            </div> 
+        </div>
+
+        <div id="cart-container" style={{card.style}}>
+            
+            <div id="cart-container-itemsContainer">
+                <div class="card-item" *ngFor="let item of cartItems" >
+                    <div class="CI-image">
+                        <img src={{item.image}} alt="Cart-item image">
+                    </div>
+                    <div class="CI-data">
+                        <div class="CI-name">
+                            <h4>Name: </h4> <p>{{item.name}}</p>
+                        </div>
+                        <div class="CI-quantity">
+                            <div class="qty"><h4>Quantity: </h4></div>
+                            <div class="btn">
+                                <button (click)="increaseQuantity(item.name)" style="background-color: #c47705;"> + </button>
+                                    {{item.quantity}}
+                                <button (click)="decreaseQuantity(item.name)" style="background-color: #c47705;"> - </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="clear-cart-button" (click)="clearCart()" > Clear cart </button>
+            
+        </div>
+    </div>
+</div>

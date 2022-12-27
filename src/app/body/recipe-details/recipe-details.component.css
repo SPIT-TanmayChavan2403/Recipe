@@ -1,8 +1,74 @@
 #details{
     width: 100%;
-    height: 90%;
+    height: 100%;
     display: flex;
-    align-items: center;
+    z-index: 500;
+    flex-wrap: wrap;
     justify-content: center;
-    border: 1px solid black;   
 }
+
+#banner-image{
+    width: 100%;
+    height: 70%;
+    position: relative;
+    background-color: black;
+}
+
+#banner-image img{
+    width: 100%;
+    height: 100%;
+    opacity: 80%;
+    object-fit: cover;
+}
+
+#title{
+    color: white;
+    font-size: 5rem;
+    position: absolute;
+    bottom: -11%;
+    margin-left:15px;
+}
+
+#linearGradient{
+    width: 100%;
+    height: 20%;
+    bottom: 0px;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(2,0,36,0.5) 0%, rgba(9,9,121,0) 0%, rgba(255,159,13,1) 100%);
+}
+
+#recipe-detail{
+    width: 100%;
+    height: fit-content;
+    background-color: #ff9f0d;
+}
+
+#description{
+/*    color: white;*/
+    padding: 30px;
+    font-size: 1.3rem;
+    margin-top: 120px;
+}
+
+.ingredients{
+    width: 100%;
+    padding: 30px;
+}
+
+.ingredients ul{
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.ingredients li{
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    transition: 0.2s;
+    background-color: white;;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+

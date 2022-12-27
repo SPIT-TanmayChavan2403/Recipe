@@ -1,4 +1,26 @@
 <div id="recipe-list-container">
-    <h1>This is Recipe List container</h1>
-    <button (click)="getDataFromService()" >Click here to display</button>
+    <div id="overlay"></div>
+    <div id="hollow-circle"></div>
+    <div id="recipe-list-inner-wrapper">
+        <div class="list" *ngFor="let data of service.data" (click)="showDetails(data.name)">
+            <div class="foodImage">
+                <img src={{data.imageSrc}} />
+            </div>
+            <div class="foodName">
+                <h2>{{ data.name }}</h2>
+            </div>
+        </div>
+
+        <div class="list" *ngFor="let data of service.data">
+            <div class="foodImage">
+                <img src={{data.imageSrc}} />
+            </div>
+            <div class="foodName">
+                <h2>{{ data.name }}</h2>
+            </div>
+        </div> 
+    </div>
 </div>
+
+
+<!-- <li *ngFor="let rec of service.data" >{{rec.name}}</li>  -->

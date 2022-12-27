@@ -9,7 +9,9 @@ import { RecipeListComponent } from './body/recipe-list/recipe-list.component';
 import { RecipeDetailsComponent } from './body/recipe-details/recipe-details.component';
 
 import { DataService } from './data.service';
+import { FunctionalityService } from './functionality.service';
 import { ModalComponent } from './modal/modal.component';
+import { ShoppingListComponent } from './body/shopping-list/shopping-list.component';
 
 
 @NgModule({
@@ -20,12 +22,13 @@ import { ModalComponent } from './modal/modal.component';
     RecipeListComponent,
     RecipeDetailsComponent,
     ModalComponent,
+    ShoppingListComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [DataService],
+  providers: [DataService, FunctionalityService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

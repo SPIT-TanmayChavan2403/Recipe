@@ -1,2 +1,14 @@
-<app-header id="header"></app-header>
-<router-outlet></router-outlet>
+<app-header id="header" style={{funcService.header.style}}></app-header>
+
+
+<div id="modal" style = {{funcService.modal.style}} >
+    <div id="color-bar" style={{funcService.modal.color}}></div>
+    <div id="text">
+        <p> {{funcService.modal.message}} </p>
+    </div>
+</div>
+
+<div id="circle-animation" style = {{funcService.circleAnimation.style}} >
+    <img  src="../assets/preloader2.gif" />
+</div>
+<router-outlet (activate)="changeOfRoutes()" ></router-outlet>

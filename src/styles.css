@@ -2,6 +2,7 @@
 body{
     width: 100vw;
     height: 100vh;
+/*    overflow: hidden;*/
 }
 
 *{
@@ -11,3 +12,13 @@ body{
     /* font-family: 'Rubik Vinyl', cursive; */
     box-sizing: border-box;
 }
+
+app-body, app-root{
+    display: block;
+    height: 100%;
+}
+
+app-recipe-list{
+    height: 100%;
+}
+

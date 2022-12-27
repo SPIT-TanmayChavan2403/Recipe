@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "recipe": {
+    "recipes": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/recipe",
+            "outputPath": "dist/recipes",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,17 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+<<<<<<< HEAD
               "browserTarget": "recipe:build:production"
             },
             "development": {
               "browserTarget": "recipe:build:development"
+=======
+              "browserTarget": "recipes:build:production"
+            },
+            "development": {
+              "browserTarget": "recipes:build:development"
+>>>>>>> cd70153b31320e56f417531eac3fc4ec7084ccca
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +78,11 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "recipe:build"
+=======
+            "browserTarget": "recipes:build"
+>>>>>>> cd70153b31320e56f417531eac3fc4ec7084ccca
           }
         },
         "test": {

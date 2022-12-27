@@ -1,16 +1,17 @@
 #header{
     width: 100vw;
-    height: 10%;
+    height: 13%;
     display: flex;
     align-items: center;
-    padding: 0px 10px;
-    background-color: #ff9f0d;
+    padding: 0px 35px;
+    position: fixed;
+    z-index: 100;
     justify-content: space-between;
 }
 
 #MainBody{
     width: 100vw;
-    height: 90%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -18,3 +19,66 @@
     border: 3px solid black;
 }
 
+
+#circle-animation{
+    top: 50%;
+    left: 50%;
+    width: 1000px;
+    display: flex;
+    height: 1000px;
+    z-index: 10000;
+    transition: 0.5s;
+    position: absolute;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+#circle-animation img{
+    width: 150px;
+    height: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#modal{
+/*    top: -100%;*/
+    right: 20px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    transition: 0.2s;
+    border-radius: 10px;
+    background-color: white;
+    
+}
+
+#color-bar{
+    width: 13px;
+    height: 100%;
+/*    background-color: rgb(255, 36, 36);*/
+}
+
+#text{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+}

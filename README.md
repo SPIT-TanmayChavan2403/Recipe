@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 # Recipe
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.3.
+=======
+# Recipes
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+>>>>>>> cd70153b31320e56f417531eac3fc4ec7084ccca
 
 ## Development server
 

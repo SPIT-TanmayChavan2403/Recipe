@@ -1,8 +1,100 @@
 #recipe-list-container{
     width: 100%;
-    height: 90%;
+    height: 100%;
+    padding: 0px;
+    background-image: url("src/assets/food-icons.png");
+    background-position-x: -100px;
+    background-position-y: -70px;
+}
+
+#recipe-list-inner-wrapper{
+    width: 100%;
+    height: 100%;
     display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    overflow-y: scroll;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+.list{
+    width: 30%;
+    height: 50%;
+    cursor: pointer;
+    margin: 20px;
+    z-index: 10;
+    position: relative;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.list:hover .foodImage{
+    opacity: 50%;
+}
+
+.list:hover .foodName{
+    top: 50%;
+    color: white;
+    opacity: 1;
+    font-size: 1.7rem;
+}
+
+
+.foodImage{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.foodImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.foodName{
+    top: 80%;
+    width: 100%;
+    height: 12%;
+    opacity: 0;
+    z-index: 10;
+    display: flex;
+    padding: 0px 5px;
+    text-align: center;
+    transition: 0.5s;
+    position: absolute;
     align-items: center;
-    justify-content: center; 
-    border: 1px solid black;   
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+#overlay{
+    width: 100%;
+    opacity: 70%;
+    height: 100%;
+    z-index: 10;
+    position: absolute;
+    background-color: white;
+}
+
+
+#hollow-circle{
+    width: 200px;
+    height: 200px;
+    left: -100px;
+    top: 50%;
+    z-index: 10;
+    border-radius: 50%;
+    position: absolute;
+    border: 25px solid #ff9f0d;
 }
