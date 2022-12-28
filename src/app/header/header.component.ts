@@ -11,14 +11,15 @@ import { FunctionalityService } from 'src/app/functionality.service';
 export class HeaderComponent {
     constructor(private router: Router, private service: DataService, public funcService: FunctionalityService){}
 
-    routeToRecipeList(){
+    route(url: string){
         this.funcService.enlargeCircle();
         setTimeout(() => {
-            this.router.navigate(["recipeList"]);
+            this.router.navigate([url]);
             setTimeout(() => {
                 this.funcService.closeCircle();
             },500)
         }, 1000)
+
     }
 }
  

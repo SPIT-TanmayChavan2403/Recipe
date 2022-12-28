@@ -10,7 +10,6 @@ import { RecipeDetailsComponent } from './body/recipe-details/recipe-details.com
 
 import { DataService } from './data.service';
 import { FunctionalityService } from './functionality.service';
-import { ModalComponent } from './modal/modal.component';
 import { ShoppingListComponent } from './body/shopping-list/shopping-list.component';
 
 
@@ -21,7 +20,6 @@ import { ShoppingListComponent } from './body/shopping-list/shopping-list.compon
     BodyComponent,
     RecipeListComponent,
     RecipeDetailsComponent,
-    ModalComponent,
     ShoppingListComponent,
   ],
   imports: [

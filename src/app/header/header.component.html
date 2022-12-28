@@ -1,7 +1,7 @@
 <div id="logo" style={{funcService.logo.style}}>
-    <h1 routerLink="">Recipe book</h1>
+    <h1 routerLink="">Recipe book!</h1>
 </div>
 <div id="navbarButtons">
-    <button id="recipes" (click)="routeToRecipeList()">Recipes</button>
-    <button id="shopping-list" routerLink="shoppingList" > Shopping list</button>
+    <button id="recipes" (click)="route('recipeList')">Recipes</button>
+    <button id="shopping-list" (click)="route('shoppingList')"> Shopping list</button>
 </div>

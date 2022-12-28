@@ -15,13 +15,13 @@ export class BodyComponent {
     ){}
 
   sendDataToService(){
-    setTimeout(() => {
-      this.router.navigate(['addRecipe']);
-    }, (3000));
-
     this.funcService.enlargeCircle();
     setTimeout(() => {
+      this.router.navigate(['addRecipe']);
+    }, (1000));
+
+    setTimeout(() => {
       this.funcService.closeCircle();
-    }, (3200))
+    }, (1100))
   }
 }

@@ -21,15 +21,11 @@ export class RecipeListComponent {
   }
 
   showDetails(name: string):void{
-    // console.log('Showing details of', name);
     this.funcService.enlargeCircle()
     setTimeout(() => {
       this.router.navigate(["recipeDetails"], { state: { name:name}})
-      this.funcService.fadeCicle();
-      setTimeout( ()=> {
-        this.funcService.closeCircle();
-      }, 500)
-    }, 1000)
+      this.funcService.closeCircle();
+    }, 900)
     
   }
 

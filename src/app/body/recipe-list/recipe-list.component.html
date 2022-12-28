@@ -2,6 +2,7 @@
     <div id="overlay"></div>
     <div id="hollow-circle"></div>
     <div id="recipe-list-inner-wrapper">
+
         <div class="list" *ngFor="let data of service.data" (click)="showDetails(data.name)">
             <div class="foodImage">
                 <img src={{data.imageSrc}} />
@@ -19,6 +20,7 @@
                 <h2>{{ data.name }}</h2>
             </div>
         </div> 
+        
     </div>
 </div>
 
